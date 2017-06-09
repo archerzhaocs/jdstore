@@ -6,6 +6,9 @@
     <thead>
         <tr>
             <th>#</th>
+            <th>保险名称</th>
+            <th>投保人</th>
+            <th>被保险人</th>
             <th>下单时间</th>
         </tr>
     </thead>
@@ -14,6 +17,9 @@
         <% @orders.recent.each do |order| %>
         <tr>
             <td><%= link_to(order.id, order_path(order.token)) %></td>
+            <td><%= link_to(order.product_list.product_name, order_path(order.token)) %></td>
+            <td><%= order.billing_name %></td>
+            <td><%= order.assured %></td>
             <td><%= order.created_at.to_s(:long) %></td>
         </tr>
         <% end %>

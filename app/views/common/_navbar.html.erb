@@ -17,11 +17,11 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li>
+              <!-- <li>
                 <%= link_to carts_path do %>
                   购物车 <i class="fa fa-shopping-cart"></i> (<%= current_cart.products.count %>)
                 <% end %>
-              </li>
+              </li> -->
               <li>
                   <% if !current_user %>
                     <li><%= link_to("注册", new_user_registration_path) %></li>
@@ -35,7 +35,7 @@
                       <ul class="dropdown-menu">
                           <li>
                               <% if current_user.is_admin? %>
-                              <%= link_to("Admin", admin_products_path) %>
+                              <%= link_to("后台管理", admin_products_path) %>
                               <% end %>
                               <%= link_to("我的订单", account_orders_path) %>
                               <%= link_to(content_tag(:i, '退出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %>

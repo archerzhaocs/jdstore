@@ -1,17 +1,26 @@
 class Order < ApplicationRecord
   belongs_to :user
-  has_many :product_lists
+  has_one :product_list
 
   validates :billing_name, presence: true
-  validates :billing_address, presence: true
-  validates :shipping_name, presence: true
-  validates :shipping_address, presence: true
+  # validates :billing_address, presence: true
+  # validates :shipping_name, presence: true
+  # validates :shipping_address, presence: true
+  validates :assured, presence: true
 
   before_create :generate_token
 
   def generate_token
     self.token = SecureRandom.uuid
   end
+
+  # def add_product_to_order(product)
+  #   product_list = self.build_product_lists
+  #   product_list.product_name = cart_item.product.title
+  #   product_list.product_price = cart_item.product.price
+  #   product_list.quantity = 1
+  #   product_list.save
+  # end
 
   def set_payment_with!(method)
     self.update_columns(payment_method: method)

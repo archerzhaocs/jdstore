@@ -1,0 +1,26 @@
+<h2> 订单信息 </h2>
+
+<div class="order-form">
+
+  <%= simple_form_for @order do |f| %>
+
+      <legend> 投保人</legend>
+      <div class="form-group col-lg-6">
+        <%= f.input :billing_name  %>
+      </div>
+      <!-- <div class="form-group col-lg-6">
+        <%= f.input :billing_address  %>
+      </div> -->
+
+      <legend> 被保险人</legend>
+      <div class="form-group col-lg-6">
+       <%= f.input :assured  %>
+      </div>
+
+    <div class="checkout">
+      <%= f.submit "生成订单", class: "btn btn-lg btn-danger pull-right",
+                   data: { disable_with: "Submitting..." } %>
+    </div>
+  <% end %>
+
+</div>
