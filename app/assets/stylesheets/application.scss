@@ -22,37 +22,34 @@
   //---------Box---------
 
 .box {
-    background-image: url("http://7xldwc.com1.z0.glb.clouddn.com/2017-06-04-family.jpg");
+    background-image: url("http://7xldwc.com1.z0.glb.clouddn.com/2017-06-10-fengye-1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 0px;
 
     .box-inner {
         #background-color: rgba(250, 250, 250, 0.69);
-        padding-top: 600px;
+        padding-top: 450px;
         padding-bottom: 400px;
     }
 
     .lead {
         text-align: center;
-        color: white;
+        color: #FF6600;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
     }
 
-    .btn-lg, .btn-group-lg > .btn {
+/*    .btn-lg, .btn-group-lg > .btn {
         padding: 8px 16px;//通过padding来决定btn的大小
         font-size: 20px;//btn文字大小
         letter-spacing: 3px;//调整文字间距
         border-radius: 3px;//btn圆角
         width: 300px;//这里用指定宽度把btn拉得更长
-    }
+    }*/
 }
 
-// Nav-bar
- .navbar-default {
-   background-color: #212121; //背景颜色
-   border-color: #212121; //边框色
-   margin-bottom: 0px;
- }
 
  @media (min-width: 768px) {
    .navbar {
@@ -64,47 +61,44 @@
  //---------Navbar---------
 
  .navbar-default {
-     background-color: #FFF9C4;
-     border-color: #FF9C4;;
+     background-color: #FF6600;
+     border-color: #F0561E;
      margin-bottom: 0;
      border-radius: 0;
-
  }
 
  .navbar-default .navbar-brand {
-     color: #B0BEC;
+     color: white;
      padding: 10px 15px;
      line-height: 30px;
  }
 
  .navbar-default .navbar-brand:hover,
  .navbar-default .navbar-brand:focus {
-     color: #FF6F00;
+     color: black;
      background-color: transparent;
  }
 
  .navbar-default .navbar-nav > li > a {
-     color: #EF6C00;
+     color: white;
  }
 
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
-     color: #FF6F00;
-     background-color: transparent;
+     color: black;
  }
 
  .navbar-default .navbar-nav > .active > a,
  .navbar-default .navbar-nav > .active > a:hover,
  .navbar-default .navbar-nav > .active > a:focus {
-     color: #FF6F00;
-     background-color: #FFE0B2;
+     color: black;
  }
 
  .navbar-default .navbar-nav > .open > a,
  .navbar-default .navbar-nav > .open > a:focus,
  .navbar-default .navbar-nav > .open > a:hover {
-     background-color: #FFE0B2;
-     color: #212121;
+     color: black;
+
  }
 
   .btn-danger {
@@ -139,6 +133,34 @@
     background-color: #00695C; //鼠标放置在btn上的背景颜色
     border-color: #00695C; //鼠标放置在btn上的边框颜色
   }
+
+//---------Content---------
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
 
 
 
@@ -337,7 +359,7 @@
   //bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  background-color: #233140;
+  background-color: #FF6600;
   padding: 10px;
 
   p {
@@ -345,42 +367,3 @@
   }
 }
 
-
-.col-md-4 .middle{
-  border: solid, 1px, red;
-}
-
-
-// practise css & html
-// 
-// .container {
-//     padding: 80px 120px;
-// }
-
-// .person {
-//     border: 10px solid transparent;
-//     margin-bottom: 25px;
-//     width: 80%;
-//     height: 80%;
-//     opacity: 0.7;
-// }
-// .person:hover {
-//     border-color: #f1f1f1;
-// }
-
-.carousel-inner img {
-    #-webkit-filter: grayscale(90%);
-    #filter: grayscale(90%); /* make all photos black and white */
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-}
-
-.carousel-caption h3 {
-    color: #fff !important;
-}
-
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-}
