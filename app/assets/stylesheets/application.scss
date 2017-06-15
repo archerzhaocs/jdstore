@@ -24,30 +24,38 @@
 .box {
     background-image: url("http://7xldwc.com1.z0.glb.clouddn.com/2017-06-10-fengye-1.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 0px;
+    background-size: cover;
+    margin-bottom: 50px;
 
     .box-inner {
-        #background-color: rgba(250, 250, 250, 0.69);
-        padding-top: 450px;
-        padding-bottom: 400px;
+        #background-color: rgba(250, 250, 250, 0.4);
+				padding-bottom: 5px;
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+
+		.title {
+				// color: #FF6600;
+				color: white;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .slogan {
+        //color: #FF6600;
+				color: white;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 20px;
+        top: 12px;
     }
 
     .lead {
+        margin-bottom: 60px;
         text-align: center;
-        color: #FF6600;
-        font-size: 30px;
-        font-weight: bold;
-        letter-spacing: 3px;
+        color: white;
     }
-
-/*    .btn-lg, .btn-group-lg > .btn {
-        padding: 8px 16px;//通过padding来决定btn的大小
-        font-size: 20px;//btn文字大小
-        letter-spacing: 3px;//调整文字间距
-        border-radius: 3px;//btn圆角
-        width: 300px;//这里用指定宽度把btn拉得更长
-    }*/
 }
 
 
@@ -366,4 +374,3 @@
     color: white;
   }
 }
-
